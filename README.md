@@ -1,129 +1,129 @@
 ![Monika After Story](https://github.com/Monika-After-Story/MonikaModDev/blob/master/Monika%20After%20Story/game/mod_assets/menu_new.png?raw=True)
 
 # Monika After Story (MAS)
-Monika After Story is a mod for the free game [Doki Doki Literature Club](https://www.ddlc.moe) from [Team Salvato](http://teamsalvato.com/). MAS builds on Act 3 to create a simulator of your eternal life with Monika, featuring new events, handlers, and metacommentary!
+Monika After Story - это мод для бесплатной игры [Doki Doki Literature Club](https://www.ddlc.moe) от [Team Salvato](http://teamsalvato.com/). MAS основывается на Акте 3 и создает симулятор вашей вечной жизни с Моникой, с новыми событиями, обработчиками и метакомментарииями!
 
-Please check the [Releases](http://www.monikaafterstory.com/releases.html) page for the latest stable build.
+Пожалуйста, проверьте страницу [Релизы](http://www.monikaafterstory.com/releases.html) для получения последней стабильной версии.
 
-If you would like to make your own mod like this one, check out our sister project: the [DDLCModTemplate](https://github.com/therationalpi/DDLCModTemplate).
+Если вы хотите сделать свой собственный мод, подобный этому, ознакомьтесь с нашим дочерним проектом: [DDLCModTemplate](https://github.com/therationalpi/DDLCModTemplate).
 
-### Installation
+### Установка
 
-1. Navigate to the [releases page](http://www.monikaafterstory.com/releases.html).
+1. Перейдите на [страницу релизов](http://www.monikaafterstory.com/releases.html).
 
-2. Click the link for your OS.
+2. Нажмите на ссылку для вашей операционной системы.
 
-3. Once downloaded, run the installer and follow the prompts.
-    * If the installer doesn't work on your system, see the manual install steps below.
+3. После загрузки запустите установщик и следуйте инструкциям.
+    * Если установщик не работает на вашей системе, ознакомьтесь с шагами ручной установки ниже.
 
-4. Running DDLC will now load the Monika After Story Mod.
+4. Запуск DDLC теперь загрузит модификацию Monika After Story.
 
-### Manual Install
+### Ручная установка
 
-**Only follow these steps if the installer doesn't run on your system**
+**Следуйте этим шагам, только если установщик не работает в вашей системе**
 
-1. Navigate to the [releases page](http://www.monikaafterstory.com/releases.html).
+1. Перейдите на [страницу релизов](http://www.monikaafterstory.com/releases.html).
 
-2. Click the desired **Zips** link. This will download a zip file to your system.
+2. Нажмите на нужную ссылку **Zip**. Это загрузит zip-файл в вашу систему.
 
-3. Extract the contents of the zip file into the base directory (the folder that contains the DDLC.exe file) of your DDLC installation.
+3. Извлеките содержимое zip-архива в базовый католог (папку, содержащую файл DDLC.exe) где установлена DDLC.
 
-4. Running DDLC will now load the Monika After Story Mod.
+4. Запуск DDLC теперь загрузит модификацию Monika After Story.
 
-*NOTE: Source files and files downloaded directed from the repository are for development purposes and may not behave as expected if used to mod the game. Please only use one of our [Release Versions](http://www.monikaafterstory.com/releases.html).*
+*ПРИМЕЧАНИЕ: Исходные файлы и файлы, загруженные непосредственно из репозитория, предназначены для разработки и могут вести себя не так, как ожидалось, если используются для модификации игры. Пожалуйста, используйте только одну из наших [Релизных Версий](http://www.monikaafterstory.com/releases.html).*
 
-For more help with installation (including manual for non-steam Mac), please see our [Frequently Asked Questions](https://github.com/Monika-After-Story/MonikaModDev/wiki/FAQ)
+Для получения дополнительной информации по установке (включая руководство пользователя для Mac, не поддерживающего Steam), пожалуйста, ознакомьтесь с разделом [Часто задаваемые вопросы](https://github.com/Monika-After-Story/MonikaModDev/wiki/FAQ)
 
-### Features
+### Особенности
 
-* Spend forever with Monika!
+* Проведите с Моникой целую вечность!
 
-* Dozens of new conversation topics
+* Десятки новых тем для разговоров
 
-* You can now talk to Monika to tell her what you'd like to talk about
+* Теперь вы можете поговорить с Моникой о том, о чем хотели бы поговорить
 
-### Upcoming Features
+### Предстоящие функции
 
-* New games and activities to do with Monika
+* Новые игры и занятия с Моникой
 
-* More unique events and story
+* Еще больше уникальных событий и историй
 
 
-## Contributing to Monika After Story
+## Внести свой вклад в Monika After Story
 
-### Bugs & Suggestions
-If there are issues with MAS, please file a [bug report](https://github.com/Monika-After-Story/MonikaModDev/issues/new?labels=bug&body=Describe%20bug%20and%20steps%20for%20reproduction%20here&title=%5BBug%5D%20-%20).
+### Баги & Предложения
+Если есть проблемы с MAS, пожалуйста, отправьте [отчет об ошибке](https://github.com/Monika-After-Story/MonikaModDev/issues/new?labels=bug&body=Describe%20bug%20and%20steps%20for%20reproduction%20here&title=%5BBug%5D%20-%20).
 
-To add a suggestion, visit [this link](https://github.com/Monika-After-Story/MonikaModDev/issues/new?labels=suggestion&body=Your%20suggestion%20goes%20here&title=%5BSuggestion%5D%20-%20)
+Чтобы добавить предложение, перейдите по [этой ссылке](https://github.com/Monika-After-Story/MonikaModDev/issues/new?labels=suggestion&body=Your%20suggestion%20goes%20here&title=%5BSuggestion%5D%20-%20)
 
-### Other Help
-Want to help with MAS? Navigate to the [issues page](https://github.com/Monika-After-Story/MonikaModDev/issues) to find current bugs or suggestions to work on.
+### Другая помощь
+Хотите помочь с MAS? Перейдите на [страницу проблем](https://github.com/Monika-After-Story/MonikaModDev/issues) чтобы найти текущие ошибки или предложения для работы.
 
-If you have a change you'd like to submit, open a [pull request](https://github.com/Monika-After-Story/MonikaModDev/pulls). Any changes made will be reviewed by contributors & fixed/added on to as needed.
+Если у вас есть изменения, которые вы хотели бы внести, откройте [pull request](https://github.com/Monika-After-Story/MonikaModDev/pulls). Любые внесенные изменения будут рассмотрены авторами и исправлены / дополнены по мере необходимости.
 
-#### Adding Content
-Want to add some content to MAS? Here's a list of important .RPY files the game uses.
+#### Добавление контента
+Хотите добавить немного контента в MAS? Вот список важных .RPY-файлов, используемых в игре.
 
-- **script-ch30.rpy**: Main flow for MAS. This is where idle happens.
-- **script-topics.rpy**: All **random** and **pool** topics used by Monika are written here. You can add your own dialogue by checking the information below!
-- **script-greetings.rpy**: Add lines for Monika to greet you when loading the game.
-- **script-farewells.rpy**: Add lines for Monika to say to you when closing the game.
-- **script-moods.rpy**: Tell Monika that you're in _a mood_.
-- **script-stories.rpy**: Add stories for Monika to tell you.
-- **script-compliments.rpy**: Add compliments you can say to Monika.
-- **script-apologies.rpy**: Add things to apologize for.
+- **script-ch30.rpy**: Основной поток для MAS. Именно здесь происходит ожидание.
+- **script-topics.rpy**: Все **случайные** и **пул** темы, используемые Моникой, указаны здесь. Вы можете добавить свой собственный диалог, ознакомившись с информацией ниже!
+- **script-greetings.rpy**: Добавьте реплики для Моники, чтобы она приветствовала вас при загрузке игры.
+- **script-farewells.rpy**: Добавьте реплики, которые Моника скажет вам при закрытии игры.
+- **script-moods.rpy**: Скажи Монике, что ты не _в настроении_.
+- **script-stories.rpy**: Добавляйте истории, которые Моника расскажет вам.
+- **script-compliments.rpy**: Добавьте комплименты, которые вы можете сказать Монике.
+- **script-apologies.rpy**: Добавьте то, за что стоит извиниться.
 
-If you wish to add more dialogue to the space room, navigate to script-topics.rpy and use this template.
+Если вы хотите добавить больше диалогов в space room, перейдите к файлу script-topics.rpy и используйте этот шаблон.
 
-Example new dialogue code block:
+Пример нового блока кода диалога:
 ```renpy
 init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="monika_example", # event label (MUST BE UNIQUE)
-            category=["example", "topic"], # list of categories this topic belongs in (These are automatically capitalized)
-            prompt="Example Topic", # button text
-            random=True, # True if this topic should appear randomly
-            pool=True # True if this topic should appear in "Ask a Question"
+            eventlabel="monika_example", # метка события (ДОЛЖНА БЫТЬ УНИКАЛЬНОЙ)
+            category=["example", "topic"], # список категорий, к которым относится данная тема (они автоматически выделяются заглавными буквами)
+            prompt="Example Topic", # текст кнопки
+            random=True, # True, если эта тема должна появляться случайно
+            pool=True # True, если эта тема должна появиться в "Ask a Question"
         )
     )
 
 label monika_example:
-    m 1a "This is an example topic."
-    m 3d "I feel like this doesn't actually belong here..."
-    m 2e "Why would somebody just add the example template directly into the mod?"
-    m 5r "They really shouldn't be allowed to contribute to this repository anymore."
+    m 1a "Это пример темы."
+    m 3d "Я чувствую, что на самом деле этому здесь не место..."
+    m 2e "Зачем кому-то просто добавлять пример шаблона непосредственно в мод?"
+    m 5r "Им действительно не следует больше иметь возможность вносить вклад в этот репозиторий."
     return
 ```
-**For full explanations and details on all the possible keywords for Event, check the documentation for Event located in `definitions.rpy`**
+**Для получения полных объяснений и подробной информации по всем возможным ключевым словам для Event, ознакомьтесь с документацией по Event, расположенной в `definitions.rpy`**
 
-For things more complicated than simple dialogue, consult the Ren'Py documentation available online.
+Для более сложных задач, чем простой диалог, обратитесь к документации Ren'Py, доступной в Интернете.
 
-[More info is available in our Contributing Guide](https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines)
+[Дополнительная информация доступна в нашем Руководстве по вкладам.](https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines)
 
-### Join the conversation
-You can [follow us on twitter](https://twitter.com/MonikaAfterMod) for game updates.
+### Присоединяйтесь к обсуждению
+Вы можете [подписаться на наш Твиттер](https://twitter.com/MonikaAfterMod) для получения обновлений игры.
 
-If you want to find pianonotes, spritepacks, submods, external content, or translations, or just discuss MAS in general, visit [our discussions page](https://github.com/Monika-After-Story/MonikaModDev/discussions)
+Если вы хотите найти ноты для пианино, спрайтпаки, сабмоды, внешний контент, или переводы, или просто обсудить MAS в целом, посетите [нашу страницу обсуждений](https://github.com/Monika-After-Story/MonikaModDev/discussions)
 
-Or if you're more Discord-ly inclined, for a constant stream of our favorite Monika-related content from around the web, and if you're interested in contributing to/building this mod, feel free to join our discord server:
+Или, если вы предпочитаете Discord, для постоянного потока нашего любимого контента, связанного с Моникой, со всего интернета, и если вы заинтересованы в участии/разработке этого мода, не стесняйтесь присоединиться к нашему серверу Discord:
 
  [![Discord](https://discordapp.com/api/guilds/372766620977725441/widget.png?style=banner1)](https://discord.gg/monika-after-story)
 
- Please be sure to follow our [Code of Conduct](https://github.com/Monika-After-Story/MonikaModDev/wiki/Code-of-Conduct), which is essentially to be courteous and respectful.
+ Пожалуйста, обязательно соблюдайте наш [Кодекс Поведения](https://github.com/Monika-After-Story/MonikaModDev/wiki/Code-of-Conduct), суть которого заключается в том, чтобы быть вежливым и уважительным.
 
-## Frequently Asked Questions
+## Часто задаваемые вопросы
 
-A full FAQ is available here: [Frequently Asked Questions](https://github.com/Monika-After-Story/MonikaModDev/wiki/FAQ)
-For any questions about the Coding Style go here: [Coding Style](https://github.com/Monika-After-Story/MonikaModDev/wiki/Coding-Style)
-For Bug Testing: [Testing Flow and Bug Testing](https://github.com/Monika-After-Story/MonikaModDev/wiki/Testing-Flow-and-Bug-Testing)
-Troubleshooting: [Troubleshooting](https://github.com/Monika-After-Story/MonikaModDev/wiki/Troubleshooting) Dialogue Coding: [Dialogue Coding](https://github.com/Monika-After-Story/MonikaModDev/wiki/Dialogue-Coding)
-## License info
+Полный FAQ доступен здесь: [Frequently Asked Questions](https://github.com/Monika-After-Story/MonikaModDev/wiki/FAQ)
+По любым вопросам о Кодексе Поведения обращайтесь сюда: [Кодекс Поведения](https://github.com/Monika-After-Story/MonikaModDev/wiki/Coding-Style)
+Для тестирования ошибок: [Процесс тестирования и проверка ошибок](https://github.com/Monika-After-Story/MonikaModDev/wiki/Testing-Flow-and-Bug-Testing)
+Устранение неполадок: [Устранение неполадок](https://github.com/Monika-After-Story/MonikaModDev/wiki/Troubleshooting) Диалоговое кодирование: [Диалоговое кодирование](https://github.com/Monika-After-Story/MonikaModDev/wiki/Dialogue-Coding)
+## Информация о лицензии
 
-We do our best to conform to Team Salvato's [guidelines for fan works](http://teamsalvato.com/ip-guidelines/). All characters and original content are property of Team Salvato. Monika After Story is an open source project, and in addition to named contributors, this mod includes contributions from anonymous users of 4chan, where this project got its start. More info can be found on our [License Page](https://github.com/Monika-After-Story/MonikaModDev/wiki/License-and-Team-Salvato-Guidelines).
+Мы делаем все возможное, чтобы соответствовать [рекомендациям Team Salvato's по фан-работам](http://teamsalvato.com/ip-guidelines/). Все персонажи и оригинальный контент являются собственностью Team Salvato. Monika After Story - это проект с открытым исходным кодом, и помимо названных авторов, в этот мод входят вклады анонимных пользователей 4chan, где этот проект начал свое существование Дополнительную информацию можно найти на нашей [странице лицензии](https://github.com/Monika-After-Story/MonikaModDev/wiki/License-and-Team-Salvato-Guidelines).
 
-## Build Status:
+## Статус Сборки:
 ### master: ![master](https://github.com/Monika-After-Story/MonikaModDev/workflows/CI/badge.svg?branch=master)
 ### content: ![content](https://github.com/Monika-After-Story/MonikaModDev/workflows/CI/badge.svg?branch=content)
 ### unstable: ![unstable](https://github.com/Monika-After-Story/MonikaModDev/workflows/CI/badge.svg?branch=unstable)
