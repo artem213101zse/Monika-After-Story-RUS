@@ -4,7 +4,7 @@
 ## Если нет, отобразите сообщение об ошибке и выйдите.
 init -100 python:
     #Проверка наличия каждого необходимого архива
-    for archive in ['audio','images','scripts','fonts']:
+    for archive in ['audio','images','scripts']:
         if not archive in config.archives:
             #Если один отсутствует, выдать ошибку и закрыть
             renpy.error("DDLC archive files not found in /game folder. Check installation and try again.")
