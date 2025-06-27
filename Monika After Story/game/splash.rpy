@@ -1,21 +1,21 @@
-## This splash screen is the first thing that Renpy will show the player
+## Этот заставочный экран — первое, что Ren'Py покажет игроку
 ##
-## Before load, check to be sure that the archive files were found.
-## If not, display an error message and quit.
+## Перед загрузкой убедитесь, что архивные файлы были найдены.
+## Если нет, отобразите сообщение об ошибке и выйдите.
 init -100 python:
-    #Check for each archive needed
+    #Проверка наличия каждого необходимого архива
     for archive in ['audio','images','scripts','fonts']:
         if not archive in config.archives:
-            #If one is missing, throw an error and chlose
+            #Если один отсутствует, выдать ошибку и закрыть
             renpy.error("DDLC archive files not found in /game folder. Check installation and try again.")
 
-## First, a disclaimer declaring this is a mod is shown, then there is a
-## check for the original DDLC assets in the install folder. If those are
-## not found, the player is directed to the developer's site to download.
+## Сначала показывается отказ от ответственности, в котором говорится, что это мод, а затем
+## происходит проверка наличия оригинальных ресурсов DDLC в папке установки. Если эти
+## ресурсы не найдены, игрок перенаправляется на сайт разработчика для загрузки.
 ##
 init python:
     menu_trans_time = 1
-    #The default splash message, originally shown in Act 1 and Act 4
+    #Сообщение по умолчанию, первоначально показанное в Акте 1 и Акте 4
     splash_message_default = _("This game is an unofficial fan work, unaffiliated with Team Salvato.")
     splash_messages = [
     _("Please support Doki Doki Literature Club & Team Salvato."),
@@ -35,7 +35,7 @@ init python:
 
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
 
-##Here's where you can change the logo file to whatever you want
+##Здесь вы можете изменить файл логотипа на любой другой
 image menu_logo:
     "mod_assets/menu_new.png"
     subpixel True
@@ -169,19 +169,19 @@ label splashscreen:
         persistent.sessions['total_sessions'] = persistent.sessions['total_sessions']+ 1
         store.mas_calendar.loadCalendarDatabase()
 
-        # set zoom
+        # установить масштаб
         store.mas_sprites.adjust_zoom()
 
-        # We're about to start, all things should be loaded, we can check event conditionals
+        # Мы собираемся начать, все должно быть загружено, мы можем проверить условия события
         Event.validateConditionals()
 
     if store.mas_per_check.should_show_chibika_persistent():
-        # we have a corrupted per w/ no backups or incompatible per
+        # у нас поврежденный per w/ без резервных копий или несовместимый per
         call mas_backups_you_have_bad_persistent
 
     scene white
 
-    #If this is the first time the game has been run, show a disclaimer
+    #Если игра запускается впервые, покажите заявление об отказе от ответственности
     if persistent.first_run:
         $ quick_menu = False
         pause 0.5
@@ -202,7 +202,7 @@ label splashscreen:
         scene white
         with Dissolve(1.5)
 
-        #Optional, load a copy of DDLC save data
+        #Дополнительно, загрузите копию данных сохранения DDLC.
         if not persistent._mas_imported_saves:
             call import_ddlc_persistent from _call_import_ddlc_persistent
 
@@ -218,10 +218,10 @@ label splashscreen:
             versfile.write(config.name + "|" + config.version + "\n")
 
 
-    #Check for game updates before loading the game or the splash screen
+    #Проверка обновлений игры перед загрузкой игры или заставки
 
-    #autoload handling
-    #Use persistent.autoload if you want to bypass the splashscreen on startup for some reason
+    #Обработка автозагрузки
+    #Используйте persistent.autoload, если вы хотите обойти заставку при запуске по какой-либо причине
     if persistent.autoload and not _restart:
         jump autoload
 
