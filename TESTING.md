@@ -1,11 +1,11 @@
-# Testing Flow / Bug Testing
-This is a separate section from the [Contributing Guidelines](https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines) page. It will contain a small guide on testing things you wish to implement for bugs & other issues, which is crucial to do before submitting a Pull Request to the repository. 
+# Тестирование Flow / Тестирование ошибок
+Это отдельный раздел от страницы [Руководства по внесению изменений](https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines). Здесь будет небольшое руководство по тестированию вещей, которые вы хотите реализовать, на наличие ошибок и других проблем, что имеет решающее значение перед отправкой запроса на изменение (Pull Request) в репозиторий.
 
-## Setting Up
-### The Tools
-Can't work without tools, right? Here's a list of simple but effective tools you can use for testing & fixing bugs. 
+## Настройка
+### Инструменты
+Не обойтись без инструментов, верно? Вот список простых, но эффективных инструментов, которые вы можете использовать для тестирования и исправления ошибок.
 
-#### Text Editors
-[Atom](https://atom.io/) - One of the most prominent text editors used by MAS contributors, *Atom* has many tools & features that allow for efficient and clean work on files that are being edited. It even has tools for *fixing merge conflicts.*
+#### Текстовые редакторы
+[Atom](https://atom.io/) - Один из самых известных текстовых редакторов, используемых участниками MAS, *Atom* имеет множество инструментов и функций, которые позволяют эффективно и аккуратно работать с редактируемыми файлами. У него даже есть инструменты для *исправления конфликтов слияния*.
 
-[Microsoft Visual Studio Code](https://code.visualstudio.com/) - Lightweight and takes only a few minutes to install. Highly recommended for dialogue writing.
+[Microsoft Visual Studio Code](https://code.visualstudio.com/) - Легковесный и установка занимает всего несколько минут. Настоятельно рекомендуется для написания диалогов.

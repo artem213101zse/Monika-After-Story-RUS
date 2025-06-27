@@ -1,1 +1,1 @@
-Please see the [wiki page](https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines).
+Пожалуйста, ознакомьтесь с [вики-страницей](https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines).

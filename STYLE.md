@@ -1,44 +1,38 @@
-# Coding Style
+# Стиль кодирования
 
-We don't have a strict style guideline, but here's a couple of conventions
-we like to follow:
+У нас нет строгих стилистических рекомендаций, но вот несколько традиций, которые нам нравится соблюдать:
 
-### Indentation
+### Отступ
 
-**Four-space indents.**
+**Отступы через четыре пробела.**
 
-### Labels
+### Метки
 
-Label names should be lowercase and separated with underscores (`monika_twitter`). 
-If you use many labels for a related subprogram, prefix them with `mas` and the
-name of your subprogram (i.e: `mas_coolfungame_flowstart`). **Exceptions to
-this rule:** Monika topics/greetings/farewells, although this may changed in
-the future.
+Имена меток должны быть строчными и разделены подчеркиваниями (`monika_twitter`). 
+Если вы используете много меток для связанной подсистемы, добавьте префикс `mas` и название вашей подсистемы (например: `mas_coolfungame_flowstart`). **Исключения из этого правила:** темы/приветствия/прощания Моники, хотя это может измениться в будущем.
 
-Certain prefixes are reserved:
+Некоторые префиксы зарезервированы:
 
-- `greeting` - used for regular greetings
-- `i_greeting` - used for special interactive greetings
-- `ch30` - used for key chapter 30 labels
-- `monika` - used for nearly every monika topic
-- `joke` - used for the jokes system
-- `m_joke` - also used for the jokes sytem
-- `mas_poem` - used for poemgame system
-- `game` - used for most of the minigames
-- `vv` - used for update-related material
-- `v` - also used for update-related material
-- `bye` - used for farewells
+- `greeting` - используется для обычных приветствий
+- `i_greeting` - используется для специальных интерактивных приветствий
+- `ch30` - используется для ключевых меток 30 главы
+- `monika` - используется для почти всех тем о Монке
+- `joke` - используется для системы шуток
+- `m_joke` - также используется для системы шуток
+- `mas_poem` - используется для системы поэтических игр
+- `game` - используется для большинства мини-игр
+- `vv` - используется для материалов, связанных с обновлениями
+- `v` - также используется для материалов, связанных с обновлениями
+- `bye` - используется для прощаний
 
-There may be more, so in general, be mindful of the labels you use.
+Может быть и больше, поэтому в общем, будьте внимательны к меткам, которые вы используете.
 
 
 ### Store
 
-In Renpy, stores are like namespaces, except you can't have nested ones. We
-recommend grouping related data, constants, and functions in stores to avoid
-messing with the global namespace.
+В Renpy, stores похожи на namespaces, а исключением того, что вы не можете иметь вложенные. Мы рекомендуем группировать связанные данные, константы и функции в stores, чтобы избежать путаницы с global namespace.
 
-To create a store:
+Чтобы создать store:
 ```python
 init python in mas_store_name:
     var1 = 1
@@ -50,7 +44,7 @@ define mas_store_name.var1 = 1
 define mas_store_name.var2 = 2
 ```
 
-To access a store:
+Чтобы получить доступ к store:
 ```python
 store.mas_store_name.var1 = 1
 
@@ -60,25 +54,17 @@ python:
     mas_store_name.var1 = 1
 ```
 
-We use several different stores to group different data. When deciding to make
-a new store, ensure that it is not already in use. Prefix your store names
-with `mas_`.
+Мы используем несколько различных stores для группировки различных данных. При решении о создании нового store, убедитесь, что он уже не используется. Добавляйте префикс `mas_` к именам ваших store 
 
-`persistent` is like a store, but its a special one that gets saved to disk.
-**Only use this if you need to save data from multiple sessions** 
-More on this later...
+`persistent` похож на store, но это специальный, который сохраняется на диск.
+**Используйте это только если вам нужно сохранить данные из нескольких сеансов** 
+Больше об этом позже...
 
-### Functions
+### Функции
 
-If a function is very specific to a subprogram or flow, consider making it in 
-a store and importing it when necessary. If a function can be generalized for
-many use cases, then make it in a regular `init python` block (which makes it
-global). **Prefix global functions with mas**
+Если функция очень специфична для подпрограммы или потока, подумайте о том , чтобы сделать её в store и импортировать, когда это необходимо. Если функцию можно обобщить для многих случаев использования, создайте её в обычном блоке `init python` (что делает её глобальной). **Префиксируйте глобальные функции с помощью mas**
 
-For documentation, either block comments (#) or doc strings (""") are fine. We
-don't enforce a particular way of documenting functions, but noting what the
-function does, its input and output vars, what it returns, and variables it
-assumes would be a good start:
+Для документации подойдут как блочные комментарии (#), так и строки документации ("""). Мы не требуем определенного способа документирования функций, но указание того, что делает функция, её входные и выходные переменные, что она возвращает и какие переменные она предполагает, будет хорошим началом:
 
 ```python
 def mas_someKindOfFunction(var1, var2, var3=None):
@@ -100,55 +86,39 @@ def mas_someKindOfFunction(var1, var2, var3=None):
         persistent.var4 
     """
 ```
-For function names, either camelCase or lowercase_underscores are fine.
+Для имен функций подойдут как camelCase так и lowercase_underscores.
 
 ### Persistent
 
-This store-like thing saves data to disk and is how renpy keeps track of data.
-Because its already loaded with data from the stock game, **avoid using this
-if you can**. (I.e: instead of using a persistent to check if an event has been
-seen, use `renpy.seen_label` or `seen_event`.
+Этот аналог store сохраняет данные на диск и служит для отслеживания данных в renpy.
+Поскольку он уже загружен с данными из стоковой игры, **избегайте его использования, если это возможно**. (Т.е.: вместо того, чтобы использовать persistent для проверки, было ли событие увидено, используйте `renpy.seen_label` или `seen_event`.
 
-**Prefix all persistent variable names with `_mas_`.** (We are currently in 
-progress of converting all currently created `persistent` values to be prefixed
-correctly)
+**Префиксируйте все имена постоянных переменных с помощью `_mas_`.** (В настоящее время мы находимся в процессе преобразования всех созданных значений `persistent` чтобы они были правильно префиксированы)
 
-### Constants
+### Константы
 
-Define constants instead of literals when you're using them multiple times. 
-Use UPPERCASE_UNDERSCORES for naming.
+Определяйте константы вместо литералов, когда вы используете их несколько раз. Используйте UPPERCASE_UNDERSCORES для именования.
 
-**An exception to this is literals used in screens**. If a screen is **not**
-called with `nopredict`, then use literals when you can, as renpy optimizes 
-screens with literals.
+**Исключение из этого составляют литералы, используемые в screens**. Если экран **не**
+вызывается с `nopredict`, то используйте литералы, когда это возможно, так как renpy оптимизирует экраны с литералами.
 
-### Variables
+### Переменные
 
-Make these descriptive please. It doesn't need to be Java-like, just enough so
-its somewhat easy to figure out what it is. Using abbreviations or acronyms is
-fine. Use lowercase_underscores for naming.
+Пожалуйста, сделайте их описательными. Не обязательно, чтобы они были похожи на Java, просто достаточно, чтобы было легко понять, что это. Использование аббревиатур или акронимов допустимо. Используйте нижний регистр с подчеркиваниями для именования.
 
-### Comments
+### Комментарии
 
-Please write comments. Even though python is readable as is, knowing the
-high level reason why we are doing something or the high level effects of
-doing something is helpful. 
+Пожалуйста, пишите комментарии. Хотя Python и так читаем, знание высокоуровневой причины, почему мы что-то делаем, или высокоуровневых последствий выполнения чего-либо полезно.
 
-### Line Length
+### Длина строки
 
-Again, not really enforced, but keep them reasonable. I personally limit to 80
-columns, but beyond that to probably 120 is fine. 
-**The exception is Renpy code.** Renpy code cannot always be broken up into 
-multiple lines.
+Снова, это не строгое правило, но держите их в разумных пределах. Лично я ограничиваю до 80 колонок, но до 120 тоже вполне допустимо.
+**Исключение составляют коды Renpy.** Код Renpy не всегда можно разбить на несколько строк.
 
-### Assets
+### Ресурсы (Assets)
 
-Any assets you use must be in the `mod_assets/` folder. If you have a ton of 
-assets, group them into a subfolder.
+Все ресурсы, которые вы используете, должны находиться в папке `mod_assets/`. Если у вас много ресурсов, сгруппируйте их в подпапку.
 
-### 3rd-party Packages
+### 3rd-party Пакеты
 
-If you can do it without using an external package, then do it without the
-external package. Exceptions must be discussed with the dev team. If whatever
-library you want to add is more than a megabyte, it almost certainly will **not**
-be allowed.
+Если вы можете обойтись без использования внешнего пакета, то делайте это без внешнего пакета. Исключения должны обсуждаться с командой разработчиков. Если библиотека, которую вы хотите добавить, занимает более одного мегабайта, это почти наверняка **не** будет разрешено.
