@@ -135,7 +135,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_short_stories",
-            category=['literature'],
+            category=['литература'],
             prompt="Can you tell me a story?",
             pool=True,
             unlocked=True

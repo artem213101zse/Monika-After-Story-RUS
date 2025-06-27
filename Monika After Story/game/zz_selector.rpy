@@ -3991,7 +3991,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_clothes_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("clothes", "change"),
             pool=True,
             unlocked=True,
@@ -4073,7 +4073,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_event_clothes_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("clothes", "change"),
             pool=True,
             unlocked=False,
@@ -4141,7 +4141,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_hair_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("hair", "change"),
             pool=True,
             unlocked=False,
@@ -4187,7 +4187,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_ribbon_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("ribbon", "change"),
             pool=True,
             unlocked=False,
@@ -4259,7 +4259,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_hairclip_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("left-hair-clip", "change"),
             pool=True,
             unlocked=False,
@@ -4283,7 +4283,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_hairflower_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("left-hair-flower", "change"),
             pool=True,
             unlocked=False,
@@ -4333,7 +4333,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_choker_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("choker", "change"),
             pool=True,
             unlocked=False,
@@ -4357,7 +4357,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_hat_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("hat", "change"),
             pool=True,
             unlocked=False,
@@ -4379,7 +4379,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_earrings_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("earrings", "change"),
             pool=True,
             unlocked=False,
@@ -4401,7 +4401,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_necklace_select",
-            category=["appearance"],
+            category=["внешность"],
             prompt=store.mas_selspr.get_prompt("necklace", "change"),
             pool=True,
             unlocked=False,
