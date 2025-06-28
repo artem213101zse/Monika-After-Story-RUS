@@ -74,7 +74,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_gender_redo",
-            category=['you'],
+            category=['ты'],
             prompt="Could you call me by different pronouns?",
             unlocked=False,
             pool=True,
@@ -640,7 +640,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_changename",
-            category=['you'],
+            category=['ты'],
             prompt="I changed my name",
             unlocked=False,
             pool=True,

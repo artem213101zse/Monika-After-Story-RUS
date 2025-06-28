@@ -1116,7 +1116,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_change_weather",
-            category=["weather"],
+            category=["погода"],
             prompt="Can you change the weather?",
             pool=True,
             unlocked=True,

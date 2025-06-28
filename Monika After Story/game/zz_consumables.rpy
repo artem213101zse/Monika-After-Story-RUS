@@ -1823,7 +1823,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_consumables_check",
-            category=['supplies'],
+            category=['снабжение'],
             prompt="Are you running out of anything?",
             conditional="MASConsumable._getEnabledConsumables()",
             pool=True,

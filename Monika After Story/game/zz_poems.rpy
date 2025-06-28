@@ -301,7 +301,7 @@ init 5 python:
             persistent.event_database,
             eventlabel="monika_showpoem",
             prompt="Can I read one of your poems again?",
-            category=["literature"],
+            category=["литераутра"],
             pool=True,
             unlocked=True,
             action=EV_ACT_UNLOCK,

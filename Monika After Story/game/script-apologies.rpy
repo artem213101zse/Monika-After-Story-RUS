@@ -41,7 +41,7 @@ init 5 python:
            persistent.event_database,
            eventlabel='monika_playerapologizes',
            prompt="I want to apologize...",
-           category=['you'],
+           category=['ты'],
            pool=True,
            unlocked=True
         )
