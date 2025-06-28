@@ -41,57 +41,57 @@ init -100 python in mas_selspr:
     PROMPT_MAP = {
         "choker": {
             "_ev": "monika_choker_select",
-            "change": "Can you change your choker?",
-            "wear": "Can you wear a choker?",
+            "change": "Ты можешь поменять свой чокер?",
+            "wear": "Ты можешь надеть чокер?",
         },
         "clothes": {
             "_not_group": True,
             "_ev": "monika_clothes_select",
-            "change": "Can you change your clothes?",
+            "change": "Ты можешь переодеться?",
             # TODO: min-items
         },
         "earrings": {
             "_ev": "monika_earrings_select",
             "_min-items": 1,
-            "change": "Can you change your earrings?",
-            "wear": "Can you wear earrings?",
+            "change": "Ты можешь сменить свои серьги?",
+            "wear": "Ты можешь надеть серьги?",
         },
         "hair": {
             "_not_group": True,
             "_ev": "monika_hair_select",
-            "change": "Can you change your hairstyle?",
+            "change": "Можешь ли ты изменить свою прическу?",
             # TODO: min-items
         },
         "hat": {
             "_ev": "monika_hat_select",
             "_min-items": 1,
-            "change": "Can you change your hat?",
-            "wear": "Can you wear a hat?",
+            "change": "Ты можешь поменять сой головной убор?",
+            "wear": "Можешь ли ты надешь головной убор?",
         },
         "left-hair-clip": {
             "_ev": "monika_hairclip_select",
             "_min-items": 1,
-            "change": "Can you change your hairclip?",
-            "wear": "Can you wear a hairclip?",
+            "change": "Можешь поменять свою заколку?",
+            "wear": "Можешь надеть свою заколку?",
         },
         "left-hair-flower": {
             "_ev": "monika_hairflower_select",
             "_min-items": 1,
-            "change": "Can you change the flower in your hair?",
-            "wear": "Can you wear a flower in your hair?",
+            "change": "Можешь изменить цветок в своих волосах?",
+            "wear": "Могла бы ты вплести цветок в свои волосы?",
         },
         "necklace": {
             "_ev": "monika_necklace_select",
             "_min-items": 1,
-            "change": "Can you change your necklace?",
-            "wear": "Can you wear a necklace?",
+            "change": "Ты можешь поменять свое ожерелье?",
+            "wear": "Ты можешь надеть ожерелье?",
         },
         "ribbon": {
             "_ev": "monika_ribbon_select",
             "_min-items": 1,
             "_rule": _rule_ribbon,
-            "change": "Can you tie your hair with something else?",
-            "wear": "Can you tie your hair with something else?",
+            "change": "Можешь поменять ленточку?",
+            "wear": "Можешь надеть ленточку?",
         },
     }
 

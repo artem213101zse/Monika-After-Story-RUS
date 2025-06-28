@@ -1717,54 +1717,54 @@ init 15 python in mas_affection:
         ## DISTRESSED quips
         quips = [
             _("..."),
-            _("Yes?"),
-            _("Oh..."),
-            _("Huh..."),
+            _("Да?"),
+            _("Ох..."),
+            _("Хм..."),
             _("I guess we can talk."),
-            _("You want to talk?"),
-            _("...Go ahead."),
-            _("Are you sure you want to talk to me?"),
-            _("You actually want to talk to me?"),
-            _("Alright...{w=0.3}if that's what you want."),
-            _("Is this really what you want?"),
+            _("Ты хочешь поговорить?"),
+            _("...Продолжай."),
+            _("Ты уверен, что хочешь со мной поговорить?"),
+            _("Ты действительно хочешь поговорить со мной?"),
+            _("Ладно...{w=0.3}если это то, чего ты хочешь.."),
+            _("Это действительно то, чего ты хочешь?"),
         ]
         save_quips(DISTRESSED, quips)
 
         ## UPSET quips
         quips = [
             _("..."),
-            _("What?"),
-            _("Huh?"),
-            _("Yeah?"),
-            _("What do you want?"),
-            _("What now?"),
-            _("What is it?"),
-            _("Go on then."),
-            _("I hope this is important."),
-            _("Something on your mind?"),
-            _("Yes, [player]?"),
+            _("Что?"),
+            _("Хм?"),
+            _("Да?"),
+            _("Что ты хочешь?"),
+            _("Что теперь?"),
+            _("Что это?"),
+            _("Продоложай."),
+            _("Я надеюсь, что это важно."),
+            _("Что у тебя на уме?"),
+            _("Да, [player]?"),
         ]
         save_quips(UPSET, quips)
 
         ## NORMAL quips
         quips = [
-            _("What would you like to talk about?"),
-            _("What are you thinking of?"),
-            _("Is there something you'd like to talk about?"),
-            _("Something on your mind?"),
-            _("Yes, [player]?"),
+            _("О чем бы ты хотел поговорить?"),
+            _("О чём ты думаешь?"),
+            _("Есть ли что-то, о чем ты хотел бы поговорить?"),
+            _("Тебя что-то беспокоит?"),
+            _("Да, [player]?"),
         ]
         save_quips(NORMAL, quips)
 
         ## HAPPY quips
         quips = [
-            _("What would you like to talk about?"),
-            _("What are you thinking of?"),
-            _("Is there something you'd like to talk about?"),
+            _("О чем бы ты хотел поговорить?"),
+            _("О чём ты думаешь?"),
+            _("Есть ли что-то, о чем ты хотел бы поговорить?"),
             _("Something on your mind?"),
             _("Up to chat, [player]?"),
-            _("Yes, [player]?"),
-            _("What's on your mind, [player]?"),
+            _("Да, [player]?"),
+            _("Что у тебя на уме, [player]?"),
             _("What's up, [player]?"),
             _("Ask away, [player]."),
             _("Don't be shy, [player]."),
@@ -1773,15 +1773,15 @@ init 15 python in mas_affection:
 
         ## AFFECTIONATE quips
         quips = [
-            _("What would you like to talk about?"),
-            _("What would you like to talk about, [mas_get_player_nickname()]?"),
-            _("What are you thinking of?"),
-            _("Is there something you'd like to talk about, [mas_get_player_nickname()]?"),
+            _("О чем бы ты хотел поговорить?"),
+            _("О чем бы ты хотел поговорить, [mas_get_player_nickname()]?"),
+            _("О чём ты думаешь?"),
+            _("Есть ли что-то, о чем ты хотел бы поговорить, [mas_get_player_nickname()]?"),
             _("Something on your mind?"),
             _("Something on your mind, [mas_get_player_nickname()]?"),
             _("Up to chat, [mas_get_player_nickname()]?"),
             _("Yes, [mas_get_player_nickname()]?"),
-            _("What's on your mind, [mas_get_player_nickname()]?"),
+            _("Что у тебя на уме, [mas_get_player_nickname()]?"),
             _("What's up, [mas_get_player_nickname()]?"),
             _("Ask away, [mas_get_player_nickname()]."),
             _("Don't be shy, [mas_get_player_nickname()]~"),
@@ -1792,15 +1792,15 @@ init 15 python in mas_affection:
 
         ## ENAMORED quips
         quips = [
-            _("What would you like to talk about? <3"),
-            _("What would you like to talk about, [mas_get_player_nickname()]? <3"),
-            _("What are you thinking of?"),
-            _("Is there something you'd like to talk about, [mas_get_player_nickname()]?"),
+            _("О чем бы ты хотел поговорить? <3"),
+            _("О чем бы ты хотел поговорить, [mas_get_player_nickname()]? <3"),
+            _("О чём ты думаешь?"),
+            _("Есть ли что-то, о чем ты хотел бы поговорить, [mas_get_player_nickname()]?"),
             _("Something on your mind?"),
             _("Something on your mind, [mas_get_player_nickname()]?"),
             _("Up to chat, I see~"),
             _("Yes, [mas_get_player_nickname()]?"),
-            _("What's on your mind, [mas_get_player_nickname()]?"),
+            _("Что у тебя на уме, [mas_get_player_nickname()]?"),
             _("What's up, [player]?"),
             _("Ask away, [mas_get_player_nickname()]~"),
             _("I'm all ears, [mas_get_player_nickname()]~"),
@@ -1812,14 +1812,14 @@ init 15 python in mas_affection:
 
         ## LOVE quips
         quips = [
-            _("What would you like to talk about? <3"),
-            _("What would you like to talk about, [mas_get_player_nickname()]? <3"),
-            _("What are you thinking of?"),
+            _("О чем бы ты хотел поговорить? <3"),
+            _("О чем бы ты хотел поговорить, [mas_get_player_nickname()]? <3"),
+            _("О чём ты думаешь?"),
             _("Something on your mind?"),
             _("Something on your mind, [mas_get_player_nickname()]?"),
             _("Up to chat, I see~"),
-            _("Yes, [mas_get_player_nickname()]?"),
-            _("What's on your mind, [mas_get_player_nickname()]?"),
+            _("Да, [mas_get_player_nickname()]?"),
+            _("Что у тебя на уме, [mas_get_player_nickname()]?"),
             _("<3"),
             _("What's up, [mas_get_player_nickname()]?"),
             _("Ask away, [mas_get_player_nickname()]~"),
@@ -1854,69 +1854,69 @@ init 15 python in mas_affection:
         ## DISTRESSED quips
         quips = [
             _("..."),
-            _("If that's what you want..."),
-            _("I suppose it wouldn't hurt to give this a try..."),
-            _("...Really?"),
+            _("Если это то, чего ты хочешь..."),
+            _("Я полагаю, что не мешало бы попробовать это сделать..."),
+            _("...Действительно?"),
         ]
         save_quips(DISTRESSED, quips)
 
         ## UPSET quips
         quips = [
             _("..."),
-            _("If that's what you want..."),
-            _("...Really?"),
-            _("Oh, okay..."),
+            _("Если это то, чего ты хочешь..."),
+            _("...Правда?"),
+            _("Ох, ладно..."),
         ]
         save_quips(UPSET, quips)
 
         ## NORMAL quips
         quips = [
-            _("What would you like to play?"),
-            _("Is there something you had in mind?"),
-            _("Anything specific you'd like to play?"),
-            _("What should we play today, [player]?"),
-            _("Sure, I'm up for a game."),
+            _("Во что бы ты хотел поиграть?"),
+            _("Есть что-то, что ты хотел бы обсудить?"),
+            _("Есть ли что-то конкретное, во что ты хотели бы поиграть?"),
+            _("Во что мы сегодня поиграем, [player]?"),
+            _("Конечно, я готова к игре!"),
         ]
         save_quips(NORMAL, quips)
 
         ## HAPPY quips
         quips = [
-            _("What would you like to play?"),
+            _("Во что бы ты хотел поиграть?"),
             _("Is there something you had in mind?"),
             _("Anything specific you'd like to play?"),
-            _("What should we play today, [player]?"),
-            _("Sure, I'm up for a game!"),
+            _("Во что мы сегодня поиграем, [player]?"),
+            _("Конечно, я готова к игре!"),
         ]
         save_quips(HAPPY, quips)
 
         ## AFFECTIONATE quips
         quips = [
-            _("What would you like to play?"),
-            _("Choose anything you like, [mas_get_player_nickname()]."),
-            _("What should we play today, [mas_get_player_nickname()]?"),
-            _("Sure, I'm up for a game!"),
-            _("Pick anything you like."),
+            _("Во что бы ты хотел поиграть?"),
+            _("Выбирай то что тебе нравится, [mas_get_player_nickname()]."),
+            _("Во что мы сегодня поиграем, [mas_get_player_nickname()]?"),
+            _("Конечно, я готова к игре!"),
+            _("Выбирай всё, что вам нравится."),
         ]
         save_quips(AFFECTIONATE, quips)
 
         ## ENAMORED quips
         quips = [
-            _("What would you like to play? <3"),
-            _("Pick a game, any game~"),
-            _("Choose anything you like, [mas_get_player_nickname()]."),
-            _("Pick anything you like, [mas_get_player_nickname()]."),
+            _("Во что бы ты хотел поиграть? <3"),
+            _("Выбирай игру, любую игру~"),
+            _("Выбирай всё, что тебе нравится, [mas_get_player_nickname()]."),
+            _("Выбирай всё, что тебе нравится, [mas_get_player_nickname()]."),
         ]
         save_quips(ENAMORED, quips)
 
         ## LOVE quips
         quips = [
-            _("What would you like to play? <3"),
-            _("Choose anything you like, [mas_get_player_nickname()]."),
-            _("Pick anything you like, [mas_get_player_nickname()]."),
-            _("Pick a game, any game~"),
-            _("I'd love to play something with you, [mas_get_player_nickname()]~"),
-            _("Sure, I'd love to play with you!"),
-            _("I'll always be up to play with you, [mas_get_player_nickname()]~"),
+            _("Во что бы ты хотел поиграть? <3"),
+            _("Выбирай то что тебе нравится, [mas_get_player_nickname()]."),
+            _("Выбирай всё что тебе нравится, [mas_get_player_nickname()]."),
+            _("Выбирай игру, любую игру~"),
+            _("Я бы с удовольствием поиграла с тобой во что-нибудь, [mas_get_player_nickname()]~"),
+            _("Конечно, я бы с удовольствием поиграла с тобой!"),
+            _("Я всегда буду рада поиграть с тобой, [mas_get_player_nickname()]~"),
         ]
         save_quips(LOVE, quips)
 
@@ -3031,7 +3031,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_change_player_nicknames",
-            prompt="Can you call me different nicknames?",
+            prompt="Ты можешь называть меня по другому?",
             category=['ты'],
             pool=True,
             unlocked=False,
@@ -3041,30 +3041,30 @@ init 5 python:
     )
 
 label monika_change_player_nicknames:
-    m 1hub "Sure [player]!"
+    m 1hub "Конечно [player]!"
 
     python:
         #Generate a list of names we're using now so we can set things
         if not persistent._mas_player_nicknames:
             current_nicknames = [
-                ("Darling", "darling", False, True, False),
-                ("My darling", "my darling", False, True, False),
-                ("Dear", "dear", False, True, False),
-                ("My dear", "my dear", False, True, False),
-                ("Honey", "honey", False, True, False),
-                ("Love", "love", False, True, False),
-                ("My love", "my love", False, True, False),
-                ("Sweetheart", "sweetheart", False, True, False),
-                ("Sweetie", "sweetie", False, True, False),
+                ("Дорогой", "darling", False, True, False),
+                ("Мой дорогой", "my darling", False, True, False),
+                ("Дорогой", "dear", False, True, False),
+                ("Мой дорогой", "my dear", False, True, False),
+                ("Милый", "honey", False, True, False),
+                ("Любимый", "love", False, True, False),
+                ("Моя любовь", "my love", False, True, False),
+                ("Возлюбленный", "sweetheart", False, True, False),
+                ("Сладкий", "sweetie", False, True, False),
             ]
-            dlg_line = "Pick the names you'd like me to call you."
+            dlg_line = "Выбери те имена, которыми ты хотел бы, чтобы я тебя называла."
 
         else:
             current_nicknames = [
                 (nickname.capitalize(), nickname, True, True, False)
                 for nickname in persistent._mas_player_nicknames
             ]
-            dlg_line = "Deselect the names you don't want me to call you anymore."
+            dlg_line = "Отмени выбор имен, которые ты не хотел, чтобы я называла тебя."
 
     call mas_player_nickname_loop("[dlg_line]", current_nicknames)
     return
@@ -3074,17 +3074,17 @@ label mas_player_nickname_loop(check_scrollable_text, nickname_pool):
     python:
         renpy.say(m, renpy.substitute(check_scrollable_text), interact=False)
         nickname_pool.sort()
-    call screen mas_check_scrollable_menu(nickname_pool, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, mas_ui.SCROLLABLE_MENU_XALIGN, selected_button_prompt="Done", default_button_prompt="Done")
+    call screen mas_check_scrollable_menu(nickname_pool, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, mas_ui.SCROLLABLE_MENU_XALIGN, selected_button_prompt="Готово", default_button_prompt="Готово")
 
     python:
         done = False
         acceptable_nicknames = _return.keys()
 
         if acceptable_nicknames:
-            dlg_line = "Is there anything else you'd like me to call you?"
+            dlg_line = "Ты бы хотел, чтобы я называла тебя как-нибудь еще?"
 
         else:
-            dlg_line = "Is there something else you'd like me to call you instead?"
+            dlg_line = "Ты бы хотел, чтобы я называла тебя как-то еще вместо этого?"
 
         lowerplayer = player.lower()
         cute_nickname_pattern = "(?:{0}|{1})\\w?y".format(lowerplayer, lowerplayer[0:-1])
@@ -3096,15 +3096,14 @@ label mas_player_nickname_loop(check_scrollable_text, nickname_pool):
         menu:
             m "[dlg_line]{fast}"
 
-            "Yes.":
+            "Да.":
                 label .name_enter_skip_loop:
                     pass
 
                 #Now parse this
                 python:
                     lowername = mas_input(
-                        _("So what do you want me to call you?"),
-                        allow=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_",
+                        _("Так как же ты хочешь, чтобы я тебя называла?"),
                         length=10,
                         screen_kwargs={"use_return_button": True, "return_button_value": "nevermind"}
                     ).strip(' \t\n\r').lower()
@@ -3117,47 +3116,47 @@ label mas_player_nickname_loop(check_scrollable_text, nickname_pool):
 
                 elif lowername == "":
                     m 1eksdla "..."
-                    m 3rksdlb "You have to give me a name to call you, [player]..."
-                    m 1eua "Try again~"
+                    m 3rksdlb "Ты должен написать как тебя называть, [player]..."
+                    m 1eua "Попробуй снова~"
                     jump .name_enter_skip_loop
 
                 elif lowername == lowerplayer:
                     m 2hua "..."
-                    m 4hksdlb "That's the same name you have right now, silly!"
-                    m 1eua "Try again~"
+                    m 4hksdlb "Это то же самое имя, что и у тебя сейчас, глупышка!"
+                    m 1eua "Попробуй снова~"
                     jump .name_enter_skip_loop
 
                 elif not is_cute_nickname and mas_awk_name_comp.search(lowername):
                     $ awkward_quip = renpy.substitute(renpy.random.choice(mas_awkward_quips))
                     m 1rksdlb "[awkward_quip]"
-                    m 3rksdla "Could you pick a more...{w=0.2}{i}appropriate{/i} name please?"
+                    m 3rksdla "Не мог бы ты выбрать более...{w=0.2}{i}подхоодящее{/i} имя, пожалуйста?"
                     jump .name_enter_skip_loop
 
                 elif not is_cute_nickname and mas_bad_name_comp.search(lowername):
                     $ bad_quip = renpy.substitute(renpy.random.choice(mas_bad_quips))
                     m 1ekd "[bad_quip]"
-                    m 3eka "Please pick a nicer name for yourself, okay?"
+                    m 3eka "Пожалуйста, выбери себе имя поприличнее, хорошо?"
                     jump .name_enter_skip_loop
 
                 elif lowername in acceptable_nicknames:
-                    m 3rksdla "You already told me I can call you that, [player]..."
-                    m 1hua "Try again~"
+                    m 3rksdla "Ты уже сказал мне, что я могу называть тебя так, [player]..."
+                    m 1hua "Попробуй еще раз~"
                     jump .name_enter_skip_loop
 
                 else:
                     #If this is all good, then we'll add this to a list of things to add
                     $ acceptable_nicknames.append(lowername)
 
-            "No.":
+            "Нет.":
                 $ done = True
 
     if acceptable_nicknames:
-        $ dlg_line = "Just let me know if you ever want me to call you some other names, okay?"
+        $ dlg_line = "Просто дай мне знать, если когда-нибудь захочешь, чтобы я называл тебя другими именами, хорошо?"
 
     else:
-        $ dlg_line = "Just let me know if you ever change your mind, okay?"
+        $ dlg_line = "Просто дай мне знать, если когда-нибудь передумаешь, хорошо?"
 
-    m 1hua "Alright, [player]."
+    m 1hua "Ладно, [player]."
     m 3eub "[dlg_line]"
 
     #Now set persistent
