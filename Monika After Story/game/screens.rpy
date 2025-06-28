@@ -1462,11 +1462,11 @@ screen preferences():
                     label _("Графика")
 
                     # this is a normal button
-                    textbutton _("Изменить Renderer"):
+                    textbutton _("Рендеринг"):
                         style "check_button"
                         action Function(renpy.call_in_new_context, "mas_gmenu_start")
 
-                    textbutton _("Отключить Анимации") action ToggleField(persistent, "_mas_disable_animations")
+                    textbutton _("Выкл. Анимации") action ToggleField(persistent, "_mas_disable_animations")
 
                     #Handle buttons
                     textbutton _("UI: Тёмная Тема"):
@@ -1637,7 +1637,7 @@ screen preferences():
                     #bar value Preference("text speed")
                     bar value FieldValue(_preferences, "text_cps", range=170, max_is_zero=False, style="slider", offset=30)
 
-                    label _("Auto-Forward Time")
+                    label _("Скорость авточтения")
 
                     bar value Preference("auto-forward time")
 
@@ -1890,7 +1890,7 @@ screen hot_keys():
                     text _("Поговорить")
                     text _("Закладки")
                     text _("Сумасбродство")
-                    text _("Полноэкранный режим")
+                    text _("На полный экран")
                     text _("Снимок экрана")
                     text _("Настройки")
 
@@ -2852,7 +2852,7 @@ screen twopane_scrollable_menu(prev_items, main_items, left_area, left_align, ri
                 changed store.mas_ui.twopane_menu_search_callback
 
         if flt_evs is None:
-            text "Search for a conversation...":
+            text "Поиск темы разговора...":
                 text_align 0.0
                 layout "nobreak"
                 color "#EEEEEEB2"

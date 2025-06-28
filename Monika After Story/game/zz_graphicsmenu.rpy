@@ -39,7 +39,7 @@ init -1 python:
 
         # RENDER MAP
         RENDER_MAP = {
-            "auto": "Automatic",
+            "auto": "Автовыбор",
             "gl": "OpenGL",
             "angle": "Angle/DirectX",
             "sw": "Software"
@@ -74,7 +74,7 @@ init -1 python:
 
             # create teh buttons
             self.button_auto = MASButtonDisplayable.create_stb(
-                _("Automatically Choose"),
+                _("Выбрать Автоматически"),
                 True,
                 button_x,
                 button_y,
@@ -118,7 +118,7 @@ init -1 python:
                 return_value="sw"
             )
             self.button_ret = MASButtonDisplayable.create_stb(
-                _("Return"),
+                _("Вернуться"),
                 False,
                 button_x,
                 button_y + (4 * self.BUTTON_HEIGHT) + (5 * self.BUTTON_SPACING),
@@ -133,21 +133,21 @@ init -1 python:
             small_text_size = 18
             small_text_heading = 20
             self.text_instruct = Text(
-                _("Select a renderer to use:"),
+                _("Выбрать способ рендеринга:"),
                 font=gui.default_font,
                 size=gui.text_size,
                 color="#ffe6f4",
                 outlines=[]
             )
             self.text_restart = Text(
-                _("*Changing the renderer requires a restart to take effect"),
+                _("*При смене рендерера потребуется перезапуск игры"),
                 font=gui.default_font,
                 size=small_text_size,
                 color="#ffe6f4",
                 outlines=[]
             )
             self.text_current = Text(
-                _("Current Renderer:"),
+                _("Текущий Рендерер:"),
                 font=gui.default_font,
                 size=small_text_heading,
                 color="#ffe6f4",

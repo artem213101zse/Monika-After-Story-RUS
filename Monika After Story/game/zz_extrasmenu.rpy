@@ -358,7 +358,7 @@ screen mas_extramenu_area():
         background Solid("#0000007F")
 
         # close button
-        textbutton _("Close"):
+        textbutton _("Закрыть"):
             area (60, 596, 120, 35)
             style "hkb_button"
             action Jump("mas_extra_menu_close")
@@ -369,12 +369,12 @@ screen mas_extramenu_area():
             style "mas_extra_menu_frame"
             vbox:
                 spacing 2
-                label "Zoom":
+                label "Зум":
                     text_style "mas_extra_menu_label_text"
                     xalign 0.5
 
                 # resets the zoom value back to default
-                textbutton _("Reset"):
+                textbutton _("Сброс"):
                     style "mas_adjustable_button"
                     selected False
                     xsize 72
