@@ -89,14 +89,14 @@ init -1 python:
         NOTE_FONT = "mod_assets/font/m1_fixed.ttf"
 
         # Month names constant array
-        MONTH_NAMES = ["Unknown", "January", "February",
-            "March", "April", "May", "June", "July",
-            "August", "September", "October",
-            "November", "December"]
+        MONTH_NAMES = ["Unknown", "Январь", "Февраль",
+            "Март", "Апрель", "Май", "Июнь", "Июль",
+            "Август", "Сентябрь", "Октябрь",
+            "Наябрь", "Декабрь"]
 
         # Day names constant array
-        DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
-            "Friday", "Saturday"]
+        DAY_NAMES = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
+            "Пятница", "Суббота"]
 
         # Events to which Calendar buttons will check for
         MOUSE_EVENTS = (
@@ -300,7 +300,7 @@ M̼̤̱͇̤ ͈̰̬͈̭ͅw̩̜͇͈ͅa̲̩̭̩ͅs̙ ̣͔͓͚̰h̠̯̫̼͉e̗̗̮r�
             # Change title depending on flag
             if select_date:
                 self.text_title = Text(
-                    "Select a Date",
+                    "Выберите дату",
                     font=gui.default_font,
                     size=33,
                     color=("#ffffff" if self.day_mode else "#000000"),
@@ -308,7 +308,7 @@ M̼̤̱͇̤ ͈̰̬͈̭ͅw̩̜͇͈ͅa̲̩̭̩ͅs̙ ̣͔͓͚̰h̠̯̫̼͉e̗̗̮r�
                 )
             else:
                 self.text_title = Text(
-                    "Calendar",
+                    "Календарь",
                     font=gui.default_font,
                     size=33,
                     color=("#ffffff" if self.day_mode else "#000000"),
@@ -1939,10 +1939,10 @@ init 2 python in mas_calendar:
             changed - flag to specify that we need to change the
                 old events from the calendar
         """
-        WINTER = _("Winter")
-        SPRING = _("Spring")
-        SUMMER = _("Summer")
-        AUTUMN = _("Autumn")
+        WINTER = _("Зима")
+        SPRING = _("Весна")
+        SUMMER = _("Лето")
+        AUTUMN = _("Осень")
 
         # Season changes:
         if renpy.game.persistent._mas_pm_live_south_hemisphere:

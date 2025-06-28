@@ -8,39 +8,39 @@ init -1 python:
 
     # tooltips
     layout.MAS_TT_SENS_MODE = (
-        "Sensitive mode removes content that may be disturbing, offensive, "
-        " or considered tasteless."
+        "В чувствительном режиме удаляется контент, который может вызывать беспокойство, быть оскорбительным, "
+        " или считаться безвкусным."
     )
     layout.MAS_TT_UNSTABLE = (
-        "Unstable mode downloads updates from the experimental unstable "
-        "branch of development. It is HIGHLY recommended to make a backup "
-        "of your persistents before enabling this mode."
+        "В нестабильном режиме загружаются обновления из экспериментальной "
+        "ветки разработки unstable. НАСТОЯТЕЛЬНО рекомендуется создать резервную копию "
+        "вашего persistents файла перед включением этого режима."
     )
     layout.MAS_TT_UNSTABLE_DISABLED = (
-        "Unstable cannot be disabled until the next stable release."
+        "Нестабильная версия не может быть отключена до следующего стабильного выпуска."
     )
     layout.MAS_TT_REPEAT = _(
-        "Enable this to let Monika repeat topics that you have already seen."
+        "Включите это, чтобы Моника могла повторять темы, которые вы уже видели."
     )
     layout.MAS_TT_NOTIF = _(
-        "Enabling this will let Monika use your system's notifications and check if MAS is your active window "
+        "Включение этого параметра позволит Монике использовать уведомления вашей системы и проверять, является ли MAC вашим активным окном"
     )
     layout.MAS_TT_NOTIF_SOUND = _(
-        "If enabled, a custom notification sound will play for Monika's notifications "
+        "Если включено, то для уведомлений Моники будет воспроизводиться настраиваемый звуковой сигнал"
     )
     layout.MAS_TT_G_NOTIF = _(
-        "Enables notifications for the selected group."
+        "Включает уведомления для выбранной группы."
     )
     layout.MAS_TT_ACTV_WND = (
-        "Enabling this will allow Monika to see your active window "
-        "and offer some comments based on what you're doing."
+        "Включив эту опцию, Моника увидит ваше активное окно "
+        "и предложит несколько комментариев, основанных на том, что вы делаете."
     )
 
     _TXT_FINISHED_UPDATING = (
-        "The updates have been installed. Please reopen Monika After Story.\n\n"
-        "Get spritepacks {a=http://monikaafterstory.com/releases.html}{i}{u}from our website{/u}{/i}{/a}.\n"
-        "See the patch notes {a=https://github.com/Monika-After-Story/MonikaModDev/releases/latest}{i}{u}here{/u}{/i}{/a}.\n"
-        "Confused about some features? Take a look at our {a=https://github.com/Monika-After-Story/MonikaModDev/wiki}{i}{u}wiki page{/u}{/i}{/a}."
+        "Обновление было установлено. Пожалуйста, перезапустите Monika After Story.\n\n"
+        "Получите спрайтпаки {a=http://monikaafterstory.com/releases.html}{i}{u}с нашего веб-сайта{/u}{/i}{/a}.\n"
+        "Посмотреть примечания к выпуску можно {a=https://github.com/Monika-After-Story/MonikaModDev/releases/latest}{i}{u}здесь{/u}{/i}{/a}.\n"
+        "Вас смущают какие-то функции? Загляните на нашу {a=https://github.com/Monika-After-Story/MonikaModDev/wiki}{i}{u}вики-страницу{/u}{/i}{/a}."
     )
 
 
@@ -710,21 +710,21 @@ screen quick_menu():
             #textbutton _("Back") action Rollback()
 
 #            textbutton _("History") action ShowMenu('history')
-            textbutton _("History") action Function(_mas_quick_menu_cb, "history")
+            textbutton _("История") action Function(_mas_quick_menu_cb, "history")
 
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Пропуск") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Авто") action Preference("auto-forward", "toggle")
 
 #            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Save") action Function(_mas_quick_menu_cb, "save")
+            textbutton _("Сохранить") action Function(_mas_quick_menu_cb, "save")
 
 #            textbutton _("Load") action ShowMenu('load')
-            textbutton _("Load") action Function(_mas_quick_menu_cb, "load")
+            textbutton _("Загрузить") action Function(_mas_quick_menu_cb, "load")
             #textbutton _("Q.Save") action QuickSave()
             #textbutton _("Q.Load") action QuickLoad()
 
 #            textbutton _("Settings") action ShowMenu("preferences")
-            textbutton _("Settings") action Function(_mas_quick_menu_cb, "preferences")
+            textbutton _("Опции") action Function(_mas_quick_menu_cb, "preferences")
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -900,49 +900,49 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Just Monika") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
+            textbutton _("Только Моника") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Пожалуйста, введите свое имя", ok_action=Function(FinishEnterName)))
 
         else:
 
-            textbutton _("History") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
+            textbutton _("История") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
 
-            textbutton _("Save Game") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
+            textbutton _("Сохранить") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
 
-        textbutton _("Load Game") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
+        textbutton _("Загрузить") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
 
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
-            textbutton _("Main Menu") action NullAction(), Show(screen="dialog", message="No need to go back there.\nYou'll just end up back here so don't worry.", ok_action=Hide("dialog"))
+            textbutton _("Главное Меню") action NullAction(), Show(screen="dialog", message="No need to go back there.\nYou'll just end up back here so don't worry.", ok_action=Hide("dialog"))
 
-        textbutton _("Settings") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
+        textbutton _("Настройки") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
 
         if store.mas_submod_utils.submod_map:
-            textbutton _("Submods") action [ShowMenu("submods"), SensitiveIf(renpy.get_screen("submods") == None)]
+            textbutton _("Подмоды") action [ShowMenu("submods"), SensitiveIf(renpy.get_screen("submods") == None)]
 
         if store.mas_windowreacts.can_show_notifs and not main_menu:
-            textbutton _("Alerts") action [ShowMenu("notif_settings"), SensitiveIf(renpy.get_screen("notif_settings") == None)]
+            textbutton _("Уведомления") action [ShowMenu("notif_settings"), SensitiveIf(renpy.get_screen("notif_settings") == None)]
 
         if store.mas_api_keys.has_features():
-            textbutton _("API Keys") action [ShowMenu("mas_apikeys"), SensitiveIf(renpy.get_screen("mas_apikeys") == None)]
+            textbutton _("API ключи") action [ShowMenu("mas_apikeys"), SensitiveIf(renpy.get_screen("mas_apikeys") == None)]
 
-        textbutton _("Hotkeys") action [ShowMenu("hot_keys"), SensitiveIf(renpy.get_screen("hot_keys") == None)]
+        textbutton _("Горячие клавиши") action [ShowMenu("hot_keys"), SensitiveIf(renpy.get_screen("hot_keys") == None)]
 
         #textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc"):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action Help("README.html")
+            textbutton _("Помощь") action Help("README.html")
 
             ## The quit button is banned on iOS and unnecessary on Android.
             #If we're on the main menu, we don't want to confirm quit as Monika isn't back yet
-            textbutton _("Quit") action Quit(confirm=(None if main_menu else _confirm_quit))
+            textbutton _("Выход") action Quit(confirm=(None if main_menu else _confirm_quit))
 
         if not main_menu:
-            textbutton _("Return") action Return()
+            textbutton _("Вернуться") action Return()
 
 style navigation_button is gui_button:
     properties gui.button_properties("navigation_button")
@@ -1276,14 +1276,14 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use file_slots(_("Сохранить"))
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots(_("Загрузить"))
 
 init python:
     def FileActionMod(name, page=None, **kwargs):
@@ -1336,7 +1336,7 @@ screen file_slots(title):
 
                         add FileScreenshot(slot) xalign 0.5
 
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("Пустой слот")):
                             style "slot_time_text"
 
                         text FileSaveName(slot):
@@ -1433,7 +1433,7 @@ screen preferences():
 
     default tooltip = Tooltip("")
 
-    use game_menu(_("Settings"), scroll="viewport"):
+    use game_menu(_("Настройки"), scroll="viewport"):
 
         vbox:
             xoffset 50
@@ -1445,9 +1445,9 @@ screen preferences():
 
                     vbox:
                         style_prefix "generic_fancy_check"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        label _("Режим экрана")
+                        textbutton _("Оконный") action Preference("display", "window")
+                        textbutton _("Полный") action Preference("display", "fullscreen")
 
 #                vbox:
 #                    style_prefix "check"
@@ -1459,27 +1459,27 @@ screen preferences():
                 #Disable/Enable space animation AND lens flair in room
                 vbox:
                     style_prefix "generic_fancy_check"
-                    label _("Graphics")
+                    label _("Графика")
 
                     # this is a normal button
-                    textbutton _("Change Renderer"):
+                    textbutton _("Изменить Renderer"):
                         style "check_button"
                         action Function(renpy.call_in_new_context, "mas_gmenu_start")
 
-                    textbutton _("Disable Animation") action ToggleField(persistent, "_mas_disable_animations")
+                    textbutton _("Отключить Анимации") action ToggleField(persistent, "_mas_disable_animations")
 
                     #Handle buttons
-                    textbutton _("UI: Night Mode"):
+                    textbutton _("UI: Тёмная Тема"):
                         action [Function(mas_settings._ui_change_wrapper, persistent._mas_dark_mode_enabled), Function(mas_settings._dark_mode_toggle)]
                         selected persistent._mas_dark_mode_enabled
-                    textbutton _("UI: D/N Cycle"):
+                    textbutton _("UI: Д/Н Цикл"):
                         action [Function(mas_settings._ui_change_wrapper, mas_current_background.isFltDay()), Function(mas_settings._auto_mode_toggle)]
                         selected persistent._mas_auto_mode_enabled
 
 
                 vbox:
                     style_prefix "generic_fancy_check"
-                    label _("Gameplay")
+                    label _("Геймплей")
                     if not main_menu:
                         if persistent._mas_unstable_mode:
                             if store.mas_utils.is_ver_stable(config.version):
@@ -1500,7 +1500,7 @@ screen preferences():
                                 selected persistent._mas_unstable_mode
                                 hovered tooltip.Action(layout.MAS_TT_UNSTABLE)
 
-                    textbutton _("Repeat Topics"):
+                    textbutton _("Повторять темы"):
                         action ToggleField(persistent,"_mas_enable_random_repeats", True, False)
                         hovered tooltip.Action(layout.MAS_TT_REPEAT)
 
@@ -1592,7 +1592,7 @@ screen preferences():
                 vbox:
 
                     hbox:
-                        label _("Sunrise  ")
+                        label _("Рассвет  ")
 
                         # display time
                         label _("[[ " + sr_display + " ]")
@@ -1601,7 +1601,7 @@ screen preferences():
 
 
                     hbox:
-                        label _("Sunset  ")
+                        label _("Закат  ")
 
                         # display time
                         label _("[[ " + ss_display + " ]")
@@ -1612,7 +1612,7 @@ screen preferences():
                 vbox:
 
                     hbox:
-                        label _("Random Chatter  ")
+                        label _("Случайная болтовня  ")
 
                         # display str
                         label _("[[ " + rc_display + " ]")
@@ -1625,14 +1625,14 @@ screen preferences():
                     )
 
                     hbox:
-                        label _("Ambient Volume")
+                        label _("Громкость эмбиента")
 
                     bar value Preference("mixer amb volume")
 
 
                 vbox:
 
-                    label _("Text Speed")
+                    label _("Скорость текста")
 
                     #bar value Preference("text speed")
                     bar value FieldValue(_preferences, "text_cps", range=170, max_is_zero=False, style="slider", offset=30)
@@ -1642,18 +1642,18 @@ screen preferences():
                     bar value Preference("auto-forward time")
 
                 vbox:
-                    label _("Music Volume")
+                    label _("Громкость музыки")
                     hbox:
                         bar value Preference("music volume")
 
-                    label _("Sound Volume")
+                    label _("Громкость звуков")
                     hbox:
                         bar value Preference("sound volume")
 
 
                     null height gui.pref_spacing
 
-                    textbutton _("Mute All"):
+                    textbutton _("Без звука"):
                         style "generic_fancy_check_button"
                         action Preference("all mute", "toggle")
 
@@ -1662,11 +1662,11 @@ screen preferences():
                 #We disable updating on the main menu because it causes graphical issues
                 #due to the spaceroom not being loaded in
                 if not main_menu:
-                    textbutton _("Update Version"):
+                    textbutton _("Обновить версию"):
                         action Function(renpy.call_in_new_context, 'forced_update_now')
                         style "navigation_button"
 
-                textbutton _("Import DDLC Save Data"):
+                textbutton _("Импортировать сохранения DDLC"):
                     action Function(renpy.call_in_new_context, 'import_ddlc_persistent_in_settings')
                     style "navigation_button"
 
@@ -1829,7 +1829,7 @@ style slider_pref_vbox is pref_vbox
 screen notif_settings():
     tag menu
 
-    use game_menu(("Alerts"), scroll="viewport"):
+    use game_menu(("Уведомления"), scroll="viewport"):
 
         default tooltip = Tooltip("")
 
@@ -1837,17 +1837,17 @@ screen notif_settings():
             style_prefix "generic_fancy_check"
             hbox:
                 spacing 25
-                textbutton _("Use Notifications"):
+                textbutton _("Активировать Уведомления"):
                     action ToggleField(persistent, "_mas_enable_notifications")
                     selected persistent._mas_enable_notifications
                     hovered tooltip.Action(layout.MAS_TT_NOTIF)
 
-                textbutton _("Sounds"):
+                textbutton _("Звуки"):
                     action ToggleField(persistent, "_mas_notification_sounds")
                     selected persistent._mas_notification_sounds
                     hovered tooltip.Action(layout.MAS_TT_NOTIF_SOUND)
 
-            label _("Alert Filters")
+            label _("Фильтровать уведомления")
 
         hbox:
             style_prefix "generic_fancy_check"
@@ -1872,7 +1872,7 @@ screen notif_settings():
 screen hot_keys():
     tag menu
 
-    use game_menu(("Hotkeys"), scroll="viewport"):
+    use game_menu(("Горячие клавиши"), scroll="viewport"):
 
         default tooltip = Tooltip("")
 
@@ -1883,16 +1883,16 @@ screen hot_keys():
             hbox:
                 style_prefix "check"
                 vbox:
-                    label _("General")
+                    label _("Общее")
                     spacing 10
-                    text _("Music")
-                    text _("Play")
-                    text _("Talk")
-                    text _("Bookmark")
-                    text _("Derandom")
-                    text _("Fullscreen")
-                    text _("Screenshot")
-                    text _("Settings")
+                    text _("Музыка")
+                    text _("Играть")
+                    text _("Поговорить")
+                    text _("Закладки")
+                    text _("Сумасбродство")
+                    text _("Полноэкранный режим")
+                    text _("Снимок экрана")
+                    text _("Настройки")
 
                 vbox:
                     label _("")
@@ -1909,11 +1909,11 @@ screen hot_keys():
             hbox:
                 style_prefix "check"
                 vbox:
-                    label _("Music")
+                    label _("Музыка")
                     spacing 10
-                    text _("Volume Up")
-                    text _("Volume Down")
-                    text _("Mute")
+                    text _("Увеличить громкость")
+                    text _("Уменьшить громкость")
+                    text _("Без звука")
 
                 vbox:
                     label _("")
@@ -1923,7 +1923,7 @@ screen hot_keys():
                     text _("Shift-M")
 
     # there are lesser used hotkeys in Help that aren't needed here
-    text "Click 'Help' for the complete list.":
+    text "Нажмите 'Помощь', чтобы просмотреть полный список. ":
         xalign 1.0 yalign 0.0
         xoffset -10
         style "main_menu_version"
@@ -1944,7 +1944,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport")):
+    use game_menu(_("История"), scroll=("vpgrid" if gui.history_height else "viewport")):
 
         style_prefix "history"
 
@@ -3179,7 +3179,7 @@ screen mas_apikeys():
 
     tag menu
 
-    use game_menu(_("API Keys"), scroll="viewport"):
+    use game_menu(_("API Ключи"), scroll="viewport"):
 
         if not store.mas_api_keys.has_features():
             text _("No API keys accepted"): # NOTE: the game menu screen shouldn't have let us get here.
